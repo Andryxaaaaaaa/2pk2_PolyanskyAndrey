@@ -8,8 +8,8 @@ namespace pz_5
         {
             //Первое задание
             Console.WriteLine("Задание 1\n");
-            int a=-25;
-            int b=25;
+            int a=20;
+            int b=100;
             
             
             for (int i=a; i <= b; i+=5)
