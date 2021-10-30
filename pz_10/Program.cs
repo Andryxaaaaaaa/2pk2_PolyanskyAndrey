@@ -10,10 +10,10 @@ namespace pz_10
     {
         static void Main(string[] args)
         {
-//Вариант 20
-            //1 этап
+//Вариант 20.
+            //1 этап.
             char[][] A = new char[4][];
-            Random rnd = new Random();// рандом
+            Random rnd = new Random();// рандом.
             var last = new char[4];
             var max = new char[4];
             int iter = 0;
@@ -29,8 +29,8 @@ namespace pz_10
                 }
             }
 
-            //2 этап
-            //Выводим массив
+            //2 этап.
+            //Выводим массив.
             foreach (char[] item in A)
             {
                 foreach (char i in item)
@@ -42,8 +42,8 @@ namespace pz_10
 
             Console.WriteLine();
 
-            //3 этап
-            //Находим последние значения
+            //3 этап.
+            //Находим последние значения.
             for (int i = 0; i < 4; i++)
             {
                 last[i] = A[i][A[i].Length - 1];
@@ -56,19 +56,19 @@ namespace pz_10
 
             Console.WriteLine();
 
-            //4 этап
-            //Находим максимальные значения
+            //4 этап.
+            //Находим максимальные значения.
             for (int i = 0; i < 4; i++)
             {
                 max[i] = A[i].Max();
             }
-            //Выводим значения
+            //Выводим значения.
             foreach (var i in max)
             {
                 Console.Write(i + " ");
             }
-            //5 этап
-            //Меняем местами значения
+            //5 этап.
+            //Меняем местами значения.
             for (int i = 0; i < 4; i++)
             {
                 A[i] = new char[rnd.Next(10, 15)];
@@ -79,7 +79,7 @@ namespace pz_10
                     char temp = A[i][0];
                     A[i][0] = A[i][iter];
                     A[i][iter] = temp;
-                    //Выводим
+                    //Выводим.
                     for ( j = 0; j < A[i].Length; j++)
                         Console.Write(A[i][j] + "   ");
                     Console.WriteLine();
@@ -88,7 +88,7 @@ namespace pz_10
                 }
             }
 
-            //Завершение
+            //Завершение.
             Console.WriteLine();
         }
 
