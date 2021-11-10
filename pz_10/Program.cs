@@ -7,31 +7,25 @@ using System.Threading.Tasks;
 namespace pz_10
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {
-//Вариант 20.
-            //1 этап.
-            char[][] A = new char[4][];
-            Random rnd = new Random();// рандом.
-            var last = new char[4];
-            var max = new char[4];
-            int iter = 0;
-            int gaga = 0;
-            for (int i = 0; i < 4; i++)
+            //16 вариант
+            char[][] zubArr = new char[5][]; //объявляю первое измерени
+            Random rnd = new Random();
+            var lastItemsArray = new char[5];
+            var maxItemsArray = new char[5];
+            for (int i = 0; i < 5; i++)
             {
-                A[i] = new char[rnd.Next(10, 15)]; 
+                zubArr[i] = new char[rnd.Next(6, 15)]; //второе измерение
 
-                for (int j = 0; j < A[i].Length; j++)
+                for (int j = 0; j < zubArr[i].Length; j++)
                 {
-                    A[i][j] = (char)rnd.Next(100);
-                  
+                    zubArr[i][j] = (char)rnd.Next(100);
                 }
             }
 
-            //2 этап.
-            //Выводим массив.
-            foreach (char[] item in A)
+            foreach (char[] item in zubArr)
             {
                 foreach (char i in item)
                 {
@@ -42,54 +36,30 @@ namespace pz_10
 
             Console.WriteLine();
 
-            //3 этап.
-            //Находим последние значения.
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
-                last[i] = A[i][A[i].Length - 1];
+                lastItemsArray[i] = zubArr[i][zubArr[i].Length - 1];
             }
 
-            foreach (var i in last)
+            foreach (var i in lastItemsArray)
             {
                 Console.Write(i + " ");
             }
 
             Console.WriteLine();
 
-            //4 этап.
-            //Находим максимальные значения.
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
-                max[i] = A[i].Max();
+                maxItemsArray[i] = zubArr[i].Max();
             }
-            //Выводим значения.
-            foreach (var i in max)
+
+            foreach (var i in maxItemsArray)
             {
                 Console.Write(i + " ");
             }
-            //5 этап.
-            //Меняем местами значения.
-            for (int i = 0; i < 4; i++)
-            {
-                A[i] = new char[rnd.Next(10, 15)];
-
-                for (int j = 0; j < A[i].Length; j++)
-                {
-                    iter = j;
-                    char temp = A[i][0];
-                    A[i][0] = A[i][iter];
-                    A[i][iter] = temp;
-                    //Выводим.
-                    for ( j = 0; j < A[i].Length; j++)
-                        Console.Write(A[i][j] + "   ");
-                    Console.WriteLine();
-
-
-                }
-            }
-
-            //Завершение.
+            // последние задания не получилось сделать
             Console.WriteLine();
+            Console.ReadLine();
         }
 
 
