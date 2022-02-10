@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_5", "pz_5\pz_5.csproj", "{077D44DC-EF61-4170-80EC-39DF97F17F42}"
 EndProject
@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_9", "pz_9\pz_9.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_10", "pz_10\pz_10.csproj", "{5813ADB8-E9CE-41DF-B934-41CB7F634216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_11", "pz_11\pz_11.csproj", "{10400C6E-3825-4B6E-9FB4-4B22DC8DEAA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_11", "pz_11\pz_11.csproj", "{10400C6E-3825-4B6E-9FB4-4B22DC8DEAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_2_3", "pz_2_3\pz_2_3.csproj", "{256D451B-EF7D-457B-B36E-F36861C1C675}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{10400C6E-3825-4B6E-9FB4-4B22DC8DEAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10400C6E-3825-4B6E-9FB4-4B22DC8DEAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10400C6E-3825-4B6E-9FB4-4B22DC8DEAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256D451B-EF7D-457B-B36E-F36861C1C675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256D451B-EF7D-457B-B36E-F36861C1C675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256D451B-EF7D-457B-B36E-F36861C1C675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256D451B-EF7D-457B-B36E-F36861C1C675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
