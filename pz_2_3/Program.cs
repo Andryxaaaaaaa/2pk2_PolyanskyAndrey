@@ -37,6 +37,20 @@ namespace pz_2_3
 
         static void Main(string[] args)//Создаем 4 объекта с разными значениями
         {
+           /* Subject Subject = new Subject("ЭВМ", 80, "Экзамен");//1
+            Subject.GetInfo();
+
+
+            Subject Subject2 = new Subject("Дискретная Математика", 60, "Экзамен");//2
+            Subject2.GetInfo();
+
+
+            Subject Subject3 = new Subject("МДК_04.02", 55, "Экзамен");//3
+            Subject3.GetInfo();
+
+
+            Subject Subject4 = new Subject("Физра", 40, "Зачет");//4           
+            Subject4.GetInfo();*/ //С предыдущей практики, по факту это нам уже не нужно, но чтобы вы посмотрели и увидели ход действий, не стал удалять и закинул в комментарии
 
             AdditionalSubject AdditionalSubject = new AdditionalSubject("ЭВМ", 80, "Экзамен", "Матрицы");//1
             AdditionalSubject.GetInfo();
