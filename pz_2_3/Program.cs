@@ -67,7 +67,7 @@ namespace pz_2_3
             AdditionalSubject AdditionalSubject4 = new AdditionalSubject("Физра", 40, "Зачет", "Лыжи");//4           
             AdditionalSubject4.GetInfo();
 
-            Console.WriteLine($"\nЗачетов :{test}\nЭкзаменов:{exam}");//вывод зачетов-экзаменов с практики 4
+            Console.WriteLine($"\nЗачетов: {test}\nЭкзаменов: {exam}");//вывод зачетов-экзаменов с практики 4
 
             Console.WriteLine(); // пустая строчка разделяю
         }
@@ -92,7 +92,7 @@ namespace pz_2_3
         public override void GetInfo() // переопределяю метод
         {
             base.GetInfo();
-            Console.WriteLine($"Тема:{Theme}\n"); // вывожу тему
+            Console.WriteLine($"Тема: {Theme}\n"); // вывожу тему
         }
         //Сделана практика 3,4,5
     }
